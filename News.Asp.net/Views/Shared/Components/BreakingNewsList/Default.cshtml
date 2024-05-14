@@ -1,0 +1,11 @@
+﻿@model IEnumerable<DTO.EntityDTO.PostDTO>
+
+@foreach (var item in Model)
+{
+    <div class="marquee1">
+        <a class="breaking" asp-controller="Home" asp-action="Detail" asp-route-id="@item.Id">
+            >> @item.Title
+        </a>
+    </div>
+
+}
